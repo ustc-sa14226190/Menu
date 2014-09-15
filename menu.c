@@ -19,9 +19,9 @@
  *
  */
 
-#include "stdio.h"
-#include "stdlib.h"
-#include "string.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define CMD_NUM 10
 #define CMD_LEN 10
