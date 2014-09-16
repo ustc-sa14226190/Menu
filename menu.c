@@ -47,7 +47,7 @@ main()
     init(&head);
     display(head);
     search(head);
-	free(head);
+    free(head);
 }
 
 void init(tDataNode **head)
