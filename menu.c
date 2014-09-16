@@ -23,6 +23,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* initiate the command array */
+void init(tDataNode **head);
+/* display the command array */
+void display(tDataNode *head);
+/* search command */
+void search(tDataNode *head);
+
 #define CMD_NUM 10
 #define CMD_LEN 10
 #define DESC_LEN 100
@@ -33,13 +40,6 @@ typedef struct DataNode
     char   desc[DESC_LEN];
     struct DataNode * next;
 } tDataNode;
-
-/* initiate the command array */
-void init(tDataNode **head);
-/* display the command array */
-void display(tDataNode *head);
-/* search command */
-void search(tDataNode *head);
 
 main()
 {
@@ -69,7 +69,7 @@ void init(tDataNode **head)
 void display(tDataNode *head)
 {
     tDataNode * p = head;
-	while (p != NULL)
+    while (p != NULL)
     {
         printf("%s\t-  %s\n",p->cmd,p->desc);
         p = p->next;    
@@ -90,7 +90,7 @@ void search(tDataNode * head)
             if(!strcmp(cmdName,p->cmd))
             {
                 printf("%s\n",p->desc);
-				break;
+                break;
             }
             p = p->next;
         }   
@@ -98,7 +98,7 @@ void search(tDataNode * head)
         {
             printf("There is no this command!\n");
         }
-		printf("Enter the command :");
+        printf("Enter the command :");
         scanf("%s",cmdName);
     }
 }
