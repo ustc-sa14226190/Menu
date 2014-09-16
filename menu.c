@@ -99,6 +99,6 @@ void search(tDataNode * head)
             printf("There is no this command!\n");
         }
 		printf("Enter the command :");
-		scanf("%s",cmdName);
+        scanf("%s",cmdName);
     }
 }
