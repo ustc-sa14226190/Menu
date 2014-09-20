@@ -27,19 +27,19 @@
 #define CMD_LEN 10
 #define DESC_LEN 100
 
-/* initiate the command array */
-void init(tDataNode **head);
-/* display the command array */
-void display(tDataNode *head);
-/* search command */
-void search(tDataNode *head);
-
 typedef struct DataNode
 {
     char   cmd[CMD_LEN];
     char   desc[DESC_LEN];
     struct DataNode * next;
 } tDataNode;
+
+/* initiate the command array */
+void init(tDataNode **head);
+/* display the command array */
+void display(tDataNode *head);
+/* search command */
+void search(tDataNode *head);
 
 main()
 {
