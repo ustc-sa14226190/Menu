@@ -23,16 +23,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define CMD_NUM 10
+#define CMD_LEN 10
+#define DESC_LEN 100
+
 /* initiate the command array */
 void init(tDataNode **head);
 /* display the command array */
 void display(tDataNode *head);
 /* search command */
 void search(tDataNode *head);
-
-#define CMD_NUM 10
-#define CMD_LEN 10
-#define DESC_LEN 100
 
 typedef struct DataNode
 {
